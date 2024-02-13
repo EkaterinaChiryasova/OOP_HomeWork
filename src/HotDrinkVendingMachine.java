@@ -22,7 +22,7 @@ public class HotDrinkVendingMachine implements VendingMachine{
         }
         return null;
     }
-    public Product getHotDrinkProduct(String name, int temperature, double volume) {
+    public Product getProduct(String name, int temperature, double volume) {
         for (Product j : hotList) {
             if (j instanceof HotDrink hotDrink && j.getName().equals(name)) {
                 if (hotDrink.getTemperature() == temperature && hotDrink.getVolume() == volume) {

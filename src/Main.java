@@ -13,7 +13,7 @@ public class Main {
         machine.addBottleOfWatter(new BottleOfWater("Вода3", 1, 1));
         machine.addBottleOfWatter(new BottleOfWater("Вода4", 1000, 500));
         System.out.println(machine.getProduct("Вода1"));
-        System.out.println(machine2.getHotDrinkProduct("чай1",80,100));
+        System.out.println(machine2.getProduct("чай1",80,100));
 
     }
 }
