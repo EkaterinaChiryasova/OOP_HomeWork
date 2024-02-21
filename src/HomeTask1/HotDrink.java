@@ -1,3 +1,5 @@
+package HomeTask1;
+
 public class HotDrink extends BottleOfWater {
     private int temperature;
 
@@ -16,7 +18,7 @@ public class HotDrink extends BottleOfWater {
 
     @Override
     public String toString() {
-        return "HotDrink{" +
+        return "HomeTask2.HotDrink{" +
                 "name=" + super.getName() +'\'' +
                 ", temperature=" + temperature +
                 ", volume=" + super.getVolume() +

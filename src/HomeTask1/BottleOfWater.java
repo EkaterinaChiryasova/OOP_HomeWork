@@ -1,3 +1,5 @@
+package HomeTask1;
+
 public class BottleOfWater extends Product {
     private double volume;
 
@@ -17,7 +19,7 @@ public class BottleOfWater extends Product {
     }
     @Override
     public String toString() {
-        return "BottleOfWater{" +
+        return "HomeTask2.BottleOfWater{" +
                 "name=" + super.getName() +'\'' +
                 ", cost=" + super.getCost() +
                 ", volume=" + volume +

@@ -1,7 +1,9 @@
+package HomeTask1;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class HotDrinkVendingMachine implements VendingMachine{
+public class HotDrinkVendingMachine implements VendingMachine {
     List<Product> hotList = new ArrayList<>();
 
     public void addHotDrink(HotDrink bottle){

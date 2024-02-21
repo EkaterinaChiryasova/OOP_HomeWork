@@ -1,4 +1,4 @@
-import java.util.Arrays;
+package HomeTask1;
 
 public class Main {
     public static void main(String[] args) {
@@ -15,5 +15,6 @@ public class Main {
         System.out.println(machine.getProduct("Вода1"));
         System.out.println(machine2.getProduct("чай1",80,100));
 
+        
     }
 }

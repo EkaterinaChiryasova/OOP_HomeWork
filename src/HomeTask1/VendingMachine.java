@@ -1,4 +1,5 @@
-import java.util.ArrayList;
+package HomeTask1;
+
 import java.util.List;
 
  public interface VendingMachine {

@@ -1,3 +1,5 @@
+package HomeTask1;
+
 abstract public class Product {
     private String name;
     private int cost;
@@ -25,7 +27,7 @@ abstract public class Product {
 
     @Override
     public String toString() {
-        return "Product{" +
+        return "HomeTask2.Product{" +
                 "name='" + name + '\'' +
                 ", cost=" + cost +
                 '}';
