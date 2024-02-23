@@ -10,9 +10,6 @@ public class StudentGroup implements Iterable<Student>{
         this.studentList = studentList;
     }
 
-    public StudentGroup(int i, String группа6) {
-    }
-
     public List<Student> getStudentList() {
         return studentList;
     }
@@ -28,4 +25,11 @@ public class StudentGroup implements Iterable<Student>{
     public Iterator<Student> iterator() {
         return new StudentGroupIterator(this);
     }
+    @Override
+    public String toString() {
+        return "StudentGroup{" +
+                "studentList=" + studentList +
+                '}';
+    }
+
 }

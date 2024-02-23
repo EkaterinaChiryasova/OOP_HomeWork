@@ -1,17 +1,7 @@
 package HomeTask3;
 
-import java.util.Comparator;
-
-public class StreamComparator implements Comparator<Stream> {
-
-    @Override
-
-    public int compare(Stream o1, Stream o2) {
-        if (o1.getGroupList().size() > o2.getGroupList().size())
-            return 1;
-        if (o1.getGroupList().size() < o2.getGroupList().size())
-            return -1;
-        return 0;
-
+class StreamComparator {
+    public int compare(StudentGroup sg1, StudentGroup sg2) {
+        return sg1.getStudentList().size() - sg2.getStudentList().size();
     }
 }
