@@ -23,7 +23,7 @@ public class Teacher extends User {
                 "teacherId='" + teacherId + '\'' +
                 ", firstName='" + super.getFirstName() + '\'' +
                 ", secondName='" + super.getSecondName() + '\'' +
-                ", patronymic='" + super.getLastName() + '\'' +
+                ", lastName='" + super.getLastName() + '\'' +
                 ", dateOfBirth=" + super.getDateB() +
                 '}';
     }

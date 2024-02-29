@@ -10,13 +10,13 @@ public class Main {
         DataService dataService = new DataService();
         Controller controller = new Controller(dataService);
 
-        controller.createStudent("Alice", "Smith", "1", "01-01-2000");
+        controller.createStudent("A", "S", "1", "01-01-2000");
 
-        controller.createStudent("Bob", "Johnson", "2", "02-02-2000");
+        controller.createStudent("B", "J", "2", "02-02-2000");
         controller.getAllStudents();
 
-        controller.createTeacher("John", "Doe", "T1", "03-03-1980");
-        controller.createTeacher("Jane", "Doe", "T2", "04-04-1980");
+        controller.createTeacher("J", "D", "T1", "03-03-1980");
+        controller.createTeacher("U", "D", "T2", "04-04-1980");
         controller.getAllTeachers();
 
         controller.aggregateData();

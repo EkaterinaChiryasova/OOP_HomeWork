@@ -23,7 +23,7 @@ public class Student extends User {
                 "studentId='" + studentId + '\'' +
                 ", firstName='" + super.getFirstName() + '\'' +
                 ", secondName='" + super.getSecondName() + '\'' +
-                ", patronymic='" + super.getLastName() + '\'' +
+                ", lastName='" + super.getLastName() + '\'' +
                 ", dateOfBirth=" + super.getDateB() +
                 '}';
     }
