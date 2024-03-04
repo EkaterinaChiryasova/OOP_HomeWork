@@ -1,4 +1,5 @@
-package HomeTask4;
+package HomeTask6;
+
 
 public class Student extends User implements Comparable<Student>{
     private Integer studentId;
@@ -26,7 +27,8 @@ public class Student extends User implements Comparable<Student>{
     }
 
     @Override
-    public int compareTo(Student o) {
+    public int compareTo(Student o) {        // Принцип SRP метод отвечает только за сравнение студентов по их идентификаторам
+//        return this.studentId.compareTo(o.studentId);
         if(studentId > o.getStudentId())
             return 1;
         if(studentId < o.getStudentId())
