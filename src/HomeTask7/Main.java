@@ -1,17 +1,47 @@
 package HomeTask7;
 
+import HomeTask7.controller.CalculatorController;
+import HomeTask7.logger.CalculatorLogger;
+import HomeTask7.model.CalculatorModel;
+import HomeTask7.view.CalculatorView;
+
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        UserInterface userInterface = new UserInterface();
-        Logger logger = new Logger();
+        CalculatorView view = new CalculatorView();
+        CalculatorModel model = new CalculatorModel();
+        CalculatorLogger logger = new CalculatorLogger();
+        CalculatorController controller = new CalculatorController(view, model, logger);
 
-        try {
-            userInterface.run();
-        } catch (Exception e) {
-            logger.log("Произошла ошибка: " + e.getMessage());
-            System.out.println("Произошла ошибка.");
-        } finally {
-            logger.close();
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Введите первое число: ");
+        double num1 = scanner.nextDouble();
+
+        System.out.print("Введите операцию (+, *, /): ");
+        char operation = scanner.next().charAt(0);
+
+        System.out.print("Введите второе число: ");
+        double num2 = scanner.nextDouble();
+
+
+        switch (operation) {
+            case '+':
+                controller.addNumbers(num1, num2);
+                break;
+            case '*':
+                controller.multiplyNumbers(num1, num2);
+                break;
+            case '/':
+                controller.divideNumbers(num1, num2);
+                break;
+            default:
+                System.out.println("Неверная операция!");
         }
+
+        scanner.close();
+        logger.printLogs();
     }
 }
