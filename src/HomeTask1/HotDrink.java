@@ -27,3 +27,4 @@ public class HotDrink extends BottleOfWater {
                 '}';
     }
 }
+
