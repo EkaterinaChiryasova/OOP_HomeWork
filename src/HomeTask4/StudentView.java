@@ -10,3 +10,4 @@ public class StudentView implements UserView<Student> {
         }
     }
 }
+
