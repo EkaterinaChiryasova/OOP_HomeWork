@@ -11,3 +11,4 @@ public interface QueueBehavior {
     void releaseFromQueue();
     void releaseFromMarket(List<Actor> actors);
 }
+
