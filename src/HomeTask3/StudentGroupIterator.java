@@ -31,3 +31,4 @@ public class StudentGroupIterator implements Iterator<Student> {
             studentList.remove(counter);
     }
 }
+
