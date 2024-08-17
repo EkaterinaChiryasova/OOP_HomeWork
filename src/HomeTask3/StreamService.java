@@ -9,3 +9,4 @@ public class StreamService {
         Collections.sort(streams, (s1, s2) -> comparator.compare(s1.getStudentGroups().get(0), s2.getStudentGroups().get(0)));
     }
 }
+
