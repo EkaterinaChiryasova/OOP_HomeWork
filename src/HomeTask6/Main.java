@@ -1,6 +1,5 @@
 package HomeTask6;
 
-
 import java.util.ArrayList;
 
 public class Main {

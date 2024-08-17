@@ -1,6 +1,5 @@
 package HomeTask6;
 
-
 public class Student extends User implements Comparable<Student>{
     private Integer studentId;
 
