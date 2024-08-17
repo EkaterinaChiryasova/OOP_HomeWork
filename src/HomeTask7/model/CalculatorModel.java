@@ -15,7 +15,7 @@ public class CalculatorModel {
         if (num2 != 0) {
             result = num1 / num2;
         } else {
-            throw new ArithmeticException("Деление на ноль недопустимо!");
+            throw new ArithmeticException("Делить на ноль нельзя!");
         }
     }
 
@@ -23,4 +23,5 @@ public class CalculatorModel {
         return result;
     }
 }
+
 

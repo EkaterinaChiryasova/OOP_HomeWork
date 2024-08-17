@@ -45,3 +45,4 @@ public class Main {
         logger.printLogs();
     }
 }
+
